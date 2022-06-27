@@ -29,7 +29,11 @@ jobs:
           command: |
             npm run frontend:build 
      
-           
+    
+      - run:
+          name: Back-End Build
+          command: |
+            npm run api:build         
       - run:
           name: Install API Dependencies
           command: |
